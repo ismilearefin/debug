@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speed Monster</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1 class="heading">Speed Monster Blog</h1>
+  <div class="line"></div>
+</header> 
+<section>
+  <div>
+  <h2 class="heading">1. Difference Between Local Storage, Session Storage</h2>
+  <p class="peragraph box-container">Local Storage: <br>
+    This read-only interface property provides access to the Document’s local storage object, the stored data is stored across browser sessions. Similar to sessionStorage, except that localStorage data gets cleared when the page session ends – that is when the page is closed. It is cleared when the last “private” tab of a browser is closed (localStorage data for a document loaded in a private browsing or incognito session).
+  <br>
+  Session Storage : <br>
+  Session Storage objects can be accessed using the sessionStorage read-only property. The difference between sessionStorage and localStorage is that localStorage data does not expire, whereas sessionStorage data is cleared when the page session ends
+  </p>
+  </div>
+</section>
+<section>
+  <div>
+  <h2 class="heading">2. JavaScript Global vs Block Scope</h2>
+  <p class="peragraph box-container">Global Scope : <br>
+    The variables defined outside of any function or curly brackets are known as global variables and have global scope. Global scope means that the variables can be accessed from any part of that program, any function or conditional state can access that variable.
+  <br>
+  Block Scope : <br>
+Block scope is also a sub-type of local scope. The block scope can be defined as the scope of the variables inside the curly brackets {}. Now, these curly brackets can be of loops, or conditional statements, or something else. You are only allowed to refer to these variables from within the curly brackets {}.
+</p>
+  </div>
+</section>
+<section>
+  <div>
+  <h2 class="heading">3. How does the Event Loop works in JavaScript?</h2>
+  <p class="peragraph box-container">The event loop is a process that waits for the Call Stack to be clear before pushing callbacks from the Task Queue to the Call Stack. Once the Stack is clear, the event loop triggers and checks the Task Queue for available callbacks. If there are any, it pushes it to the Call Stack, waits for the Call Stack to be clear again, and repeats the same process.</p>
+  </div>
+</section>
+<section>
+  <div>
+  <h2 class="heading">4. How do I get undefined in JavaScript?</h2>
+  <p class="peragraph box-container">You will get undefined value when you call a non-existent property or method of an object. In the above example, a function Sum does not return any result but still we try to assign its resulted value to a variable. So in this case, result will be undefined.</p>
+  </div>
+</section>
+</body>
+</html>
