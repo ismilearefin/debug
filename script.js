@@ -27,6 +27,7 @@ const typeController = (e) => {
   // Handle backspace press
   if (newLetter == "Backspace") {
     userText = userText.slice(0, userText.length - 1);
+    errorCount ++ ; // add errorCount ...
     return display.removeChild(display.lastChild);
   }
 
@@ -54,6 +55,7 @@ const typeController = (e) => {
   if (questionText === userText) {
     gameOver();
   }
+  
 };
 
 const validate = (key) => {
@@ -88,6 +90,7 @@ const gameOver = () => {
   `;
 
   addHistory(questionText, timeTaken, errorCount);
+  console.log(errorCount)
 
   // restart everything
   startTime = null;
