@@ -96,9 +96,7 @@ body {
 .hidden {
   display: none;
 }
-/* .center-result-box{
-  display: flex;
-} */
+
 .title {
   text-align: center;
   color: white;
@@ -189,6 +187,7 @@ button {
   position: fixed;
   top: 0;
 }
+
 
 @media only screen and (max-width: 575px) {
   #question{
