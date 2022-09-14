@@ -35,7 +35,7 @@ body {
 }
 
 #display {
-  height: 100px;
+  height: 100px; /* have to change */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -145,18 +145,24 @@ button {
 }
 
 #histories {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-around; */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 2px;
+  column-gap: 5px;
 }
 
 .card {
   width: 100%;
-  height: 100%;
+  height: 25vh;
   padding: 50px;
   display: flex;
+  text-align: center;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   padding: 20px 30px;
   color: white;
   border-radius: 15px;
@@ -184,12 +190,35 @@ button {
   top: 0;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 575px) {
+  #question{
+    font-size: 20px;
+  }
+  .card {
+    flex-direction: column;
+  }
+  #display{
+    height: 30vh;
+    font-size: 24px;
+  }
+  #histories{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 992px) {
   .box-container {
     padding: 0 20px;
     width: 100%;
   }
   .card {
     flex-direction: column;
+  }
+  #histories{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   }
 }
